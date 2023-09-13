@@ -1,0 +1,488 @@
+{
+	"info": {
+		"_postman_id": "87e22b8f-cc07-44be-8cf5-8633057e5ba4",
+		"name": "productManagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25445689"
+	},
+	"item": [
+		{
+			"name": "getAllProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/allProducts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"allProducts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/allProducts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"allProducts"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1042"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"412-pgasgcJtVE/Z3/Vl98MNACbu+aM\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 13 Sep 2023 13:29:35 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"64f7e74410c6ba1255311515\",\n        \"name\": \"nilma\",\n        \"quantity\": 0,\n        \"price\": 70,\n        \"image\": \"https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/savons-des-figues-andrea-strongwater.jpg\",\n        \"createdAt\": \"2023-09-06T02:43:16.548Z\",\n        \"updatedAt\": \"2023-09-13T07:07:05.899Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6500b8f361ea69160c5ae337\",\n        \"name\": \"cake\",\n        \"quantity\": 400,\n        \"price\": 100,\n        \"image\": \"https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/savons-des-figues-andrea-strongwater.jpg\",\n        \"createdAt\": \"2023-09-12T19:16:03.774Z\",\n        \"updatedAt\": \"2023-09-13T12:49:37.441Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6500b90a61ea69160c5ae339\",\n        \"name\": \"Noodles\",\n        \"quantity\": 298,\n        \"price\": 150,\n        \"image\": \"https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/savons-des-figues-andrea-strongwater.jpg\",\n        \"createdAt\": \"2023-09-12T19:16:26.755Z\",\n        \"updatedAt\": \"2023-09-13T07:28:19.809Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6501af0f75a795da5d94e63b\",\n        \"name\": \"Sample Product\",\n        \"quantity\": 10,\n        \"price\": 29.99,\n        \"image\": \"sample.jpg\",\n        \"createdAt\": \"2023-09-13T12:46:07.221Z\",\n        \"updatedAt\": \"2023-09-13T12:46:07.221Z\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "addProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Sample Product\",\r\n    \"quantity\": 10,\r\n    \"price\": 29.99,\r\n    \"image\": \"sample.jpg\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/createProduct",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"createProduct"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Sample Product\",\r\n    \"quantity\": 10,\r\n    \"price\": 29.99,\r\n    \"image\": \"sample.jpg\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/createProduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"createProduct"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "244"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f4-5JPEVMrPz0Y+neA+SZ99/70AQww\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 13 Sep 2023 13:12:32 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Product added successfully\",\n    \"product\": {\n        \"name\": \"Sample Product\",\n        \"quantity\": 10,\n        \"price\": 29.99,\n        \"image\": \"sample.jpg\",\n        \"_id\": \"6501b54075a795da5d94e644\",\n        \"createdAt\": \"2023-09-13T13:12:32.309Z\",\n        \"updatedAt\": \"2023-09-13T13:12:32.309Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "updateProduct",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": \"6500b8f361ea69160c5ae337\",\r\n    \"name\": \"cake\",\r\n    \"quantity\": 400,\r\n    \"price\": 100,\r\n    \"image\": \"https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/savons-des-figues-andrea-strongwater.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/updateProduct/6500b8f361ea69160c5ae337",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updateProduct",
+						"6500b8f361ea69160c5ae337"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"6500b8f361ea69160c5ae337\",\r\n    \"name\": \"cake\",\r\n    \"quantity\": 400,\r\n    \"price\": 100,\r\n    \"image\": \"https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/savons-des-figues-andrea-strongwater.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/updateProduct/6500b8f361ea69160c5ae337",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"updateProduct",
+								"6500b8f361ea69160c5ae337"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "334"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"14e-N+Z5GGqnSB7C2eE+z6Bf7Sc96zI\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 13 Sep 2023 12:49:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Product updated successfully\",\n    \"product\": {\n        \"_id\": \"6500b8f361ea69160c5ae337\",\n        \"name\": \"cake\",\n        \"quantity\": 400,\n        \"price\": 100,\n        \"image\": \"https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/savons-des-figues-andrea-strongwater.jpg\",\n        \"createdAt\": \"2023-09-12T19:16:03.774Z\",\n        \"updatedAt\": \"2023-09-13T12:49:37.441Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "getProductById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/product/6500b8f361ea69160c5ae337",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"6500b8f361ea69160c5ae337"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/product/6500b8f361ea69160c5ae337",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product",
+								"6500b8f361ea69160c5ae337"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "281"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"119-+I3t6vdZVVlzFQ9hDSjwPel8qc0\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 13 Sep 2023 13:10:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"6500b8f361ea69160c5ae337\",\n    \"name\": \"cake\",\n    \"quantity\": 400,\n    \"price\": 100,\n    \"image\": \"https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/savons-des-figues-andrea-strongwater.jpg\",\n    \"createdAt\": \"2023-09-12T19:16:03.774Z\",\n    \"updatedAt\": \"2023-09-13T12:49:37.441Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "deleteProduct",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/deleteProduct/6501b54075a795da5d94e644",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deleteProduct",
+						"6501b54075a795da5d94e644"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/deleteProduct/6501b54075a795da5d94e644",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"deleteProduct",
+								"6501b54075a795da5d94e644"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "42"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2a-a+2htZNpkCDaj0ausIFBiheaYZ4\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 13 Sep 2023 13:15:35 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Product deleted successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "reserveProduct",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"products\":[{\r\n    \"productId\":\"6500b90a61ea69160c5ae339\",\r\n    \"quantity\":5\r\n}]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reserve",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reserve"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "44"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2c-zQR9VZxucrpCP4+2DxXh28+30Gw\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 13 Sep 2023 13:57:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Products reserved successfully\"\n}"
+				}
+			]
+		}
+	]
+}
