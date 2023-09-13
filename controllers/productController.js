@@ -1,4 +1,3 @@
-// module.exports = productController;
 const Product = require('../models/productModel');
 
 const productController = {
